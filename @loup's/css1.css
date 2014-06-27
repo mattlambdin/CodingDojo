@@ -1,0 +1,42 @@
+#title{
+	font-size:2em ;
+	background-color:#dddddd;
+    border-radius:25px;
+}
+a #articles{
+	color:#882222;
+}
+#sidebar-nav{
+	background-color: #dddddd;
+	border-radius: 25px;
+	width:18%;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 5px -35px 0px 0px;
+	position: relative;
+	top: 15px;
+	height: 425px;
+	line-height: 120%;
+}
+#sidebar-nav a {
+	text-decoration: none;
+	color:blue;
+}
+#content{
+	background-color: #aaaaaa;
+	border-radius: 25px;
+	width: 60%;
+	height:500px;
+	padding:28px;
+	display: inline-block;
+	position:relative;
+	top:25px;
+	line-height: 150%;
+}
+#footer{
+	background-color: #dddddd;
+	border-radius: 25px;
+	height: 70px;
+	margin-top:25px;
+	padding:10px;
+}

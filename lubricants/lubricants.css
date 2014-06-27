@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 1000px;
+	background-color: black;
+}
+#logo{
+	background-color: white;
+	height: 100px;
+}
+#nav{
+	background-color: Silver;
+	height: 60px;
+
+}
+#nav li{
+	display: inline-block;
+}
+#nav a{
+	text-decoration: none
+}
+#content{
+	background-color: black;
+	height: 300px;
+	width: 
+}
+	#main-img{
+		background-color: white;
+		display: inline-block;
+		width: 400px;
+		height: 265px;
+		margin-left: 35px;
+
+	}
+	#about{
+		background-color: white;
+		width: 500px;
+		display: inline-block;
+		height: 265px;
+		margin-left: 20px;
+	}
+	#heritage{
+
+	}
+#bottom{
+	background-color: black;
+	height: 263px;
+	width: 1000px;
+	
+}
+.b-box{
+	background-color: white;
+	display: inline-block;
+	width:220px;
+	height: 250px;
+	margin-left: 10px;
+
+
+}
+#b1{
+	margin-left: 35px;
+}
+#b4{
+	margin-right: 20px;
+}
