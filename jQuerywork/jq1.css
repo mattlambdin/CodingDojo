@@ -1,0 +1,12 @@
+#{
+	margin:0;
+	padding:0;
+}
+.pink{
+	background-color: gray;
+	color:pink;
+	display: inline-block;
+}
+span{
+	font-weight: bold;
+}

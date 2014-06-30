@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title>jQuery Awesome!!</title>
+	<link rel="stylesheet" type="text/css" href="jq1.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#classChanger').click(function() {
+				$('#add-div p').addClass('pink');
+			});
+			
+			$('#afterChanger').click(function() {
+				$('#after-div p').after('<h1>CONTENT ADDED</h1>');
+			});
+			
+			$('#appendChanger').click(function(){
+				$('#apend-div ul').append('<li><h3>CONTENT ADDED</h3></li>');
+			});
+
+			$('#attrChanger').click(function(){
+				$('#attr-div img').attr("height","200");
+			});
+
+			$('#beforeChanger').click(function(){
+				$('#before-div ul').before('<h3>LIST</h3>');
+			});
+			
+			$('#htmlChanger').click(function(){
+				$('#html-div h5').html('<h2>changed text size to h2.</h2>')
+			});
+			$('#textChanger').click(function(){
+				$('#text-div p:last-child').text("Only one changed because the last-child was included in selector")
+			});
+			$('#valChanger').click(function(){
+				$('input:text').val('Diego')
+			});
+			$('#toggleChanger').click(function(){
+				$('#toggle-div img').toggle();
+			});
+			$('#hideChanger').click(function(){
+				$('.word').hide();
+			});
+			$('#showChanger-hide').click(function(){
+				$('#show-div img').hide();
+			});
+			$('#showChanger-show').click(function(){
+				$('#show-div img').show();
+			});
+			
+
+			$('#slideUpChanger').click(function(){
+				$('#slide-div img').slideUp();
+			});
+
+			$('#slideDownChanger').click(function(){
+				$('#slide-div img').slideDown();
+			});
+			$('#slideToggleChanger').click(function(){
+				$('#slideToggle-div p:last-child').slideToggle();
+			});
+			$('#fadeOutChanger').click(function(){
+				$('#fade-div img').fadeOut();
+			});
+			$('#fadeInChanger').click(function(){
+				$('#fade-div img').fadeIn();
+
+			});
+
+			$('#focusChanger').click(function(){
+				$('#last-button').focus();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="add-div">
+		<button id="classChanger">.addClass</button>
+		<p>This will change Colors</p>
+	</div><hr>
+	<div id="after-div">
+		<button id="afterChanger">.after</button> 
+		<p>This will Insert Content "after" the targeted element</p>
+	</div><hr>
+	<div id="apend-div">
+		<button id="appendChanger">.append</button>
+		<p>This Inserts the specified content after the last child</p>
+		<ul>
+			<li>first list item</li>
+			<li>second list item</li>
+		</ul>
+	</div><hr>
+	<div id="attr-div">
+		<button id="attrChanger">.attr</button>
+		<p>This will change the <strong>inline</strong> attributes of a selected element</p>
+		<img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQfAL_LctE7EevOlaVV6htyW_v0MHm1AxAPA8NuDMZf_SGloXIu1A" height="100" width="200">
+	</div><hr>
+	<div id="before-div">
+		<button id="beforeChanger">.before</button>
+		<p>Above button will insert content before the list element</p>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div><hr>
+	<div id="html-div">
+		<button id="htmlChanger">.html</button>
+		<p>Above button changes all content of the selected element.</p>
+		<h5>All h5's will change</h5>
+	</div><hr>
+	<div id="text-div">
+		<button id="textChanger">.text</button>
+		<p>This button changes the text inside of the selected element.</p>
+		<p>This is the text to be changed</p>
+	</div><hr>
+	<div id="val-div">
+		<button id="valChanger">.val</button>
+		<p>This button will set the value of the imput field</p>
+		<p>Name:<input type="text" name="user"></p>
+	</div><hr>
+	<div id="toggle-div">
+		<button id="toggleChanger">.toggle</button>
+		<p>When this button is clicked than it will hide selected element/ than it will show if clicked again</p>
+		<img src=http://www.macrobusiness.com.au/wp-content/uploads/2011/09/rabbit_in_a_hat-242x300.png>
+	</div><hr>
+	<div id="hide-div">
+		<button id="hideChanger">.hide</button>
+		<p> This button hides what ever element thats selected</p>
+		<p>This <span class="word">WORD</span> will hide.</p>
+	</div><hr>
+	<div id="show-div">
+		<button id="showChanger-show">.show</button>
+		<button id="showChanger-hide">.hide</button>
+		<p>This method hides an element till triggered.</p>
+		<img src="http://www.gagful.com/uploads/2011_11/1321051666_haters_gonna_hate_gag.jpg">
+	</div><hr>
+	<div id="slide-div">
+		<button id="slideDownChanger">.slideDown</button>
+		<button id="slideUpChanger">.slideUp</button>
+		<p>This method creates a sliding and disappearing effect on what ever element is selected</p>
+		<img src="http://yourfaceisstupid.com/wp-content/uploads/2012/01/cheat-on-your-taxes-300x300.jpg">
+	</div><hr>
+	<div id="slideToggle-div">
+		<button id="slideToggleChanger">.slideToggle</button>
+		<p>This method is toggles slides the "said" element.</p>
+		<p>This sentence has got to go!!</p>
+	</div><hr>
+	<div id="fade-div">
+		<button id="fadeOutChanger">.fadeOut</button>
+		<button id="fadeInChanger">.fadein</button>
+		<img src="http://www.helpinghomelesscats.com/images/cats/max_tina.jpg">
+	</div><hr>
+	<div id='focus-div'>
+		<button id='focusChanger'>.focus</button>
+		<p>this method is going to bring things into focus!!!!!!!!!!!</p>
+		<button id='last-button'>gonna focus</button>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
